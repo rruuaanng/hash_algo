@@ -3,10 +3,10 @@
 
 __UINT32_TYPE__ 
 pjw_hash(const char *str){
-    __UINT32_TYPE__ bits = (unsigned int)(sizeof(unsigned int) * 8);
-    __UINT32_TYPE__ tbit = (unsigned int)((bits  * 3) / 4);
-    __UINT32_TYPE__ obit = (unsigned int)(bits / 8);
-    __UINT32_TYPE__ hbit = (unsigned int)(0xFFFFFFFF) << (bits - obit);
+    __UINT32_TYPE__ bits = (__UINT32_TYPE__)(sizeof(__UINT32_TYPE__) * 8);
+    __UINT32_TYPE__ tbit = (__UINT32_TYPE__)((bits  * 3) / 4);
+    __UINT32_TYPE__ obit = (__UINT32_TYPE__)(bits / 8);
+    __UINT32_TYPE__ hbit = (__UINT32_TYPE__)(0xFFFFFFFF) << (bits - obit);
     int hash = 0;
     int n = 0;
     while(*str){
