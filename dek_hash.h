@@ -1,6 +1,6 @@
 #ifndef __DEK_HASH_H
 #define __DEK_HASH_H
-#include <stdio.h>
+
 
 __UINT32_TYPE__
 dek_hash(const char *str,int len){
